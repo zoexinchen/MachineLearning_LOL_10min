@@ -9,9 +9,11 @@ Our work is to use machine learning methods to predict the winner of the game ba
 
 ### Methods
 
+For our study we used **R (RStudio 2022.02.0+443)** for data analysis.
+
 Before model building, we inspected the raw data set to check for any missing data, strong collinearity variables, and cahnged some categorical varaibles into factors. We've also split the data set into training and test set by the ratio of 80:20. The cross-validation sets are created by spliting the training set into 5 parts, but in our cross-validation process we mainly used the `caret::train()` function.
 
-As this is a classification problem, we applied various supervised machine learning skills such as **Logsitic Regression**, **LDA**, **QDA**, **KNN**, **Dicision Tree** and **Random Forest**. We trained the model and tuned the parameters using the cross-validation sets, and computed the goodness of prediction by recording and comparing the test errors, AUC scores on the test set.
+As this is a classification problem, we applied various supervised machine learning skills such as **Logsitic Regression**, **LDA**, **QDA**, **KNN**, **Dicision Tree** and **Random Forest**. We trained the model and tuned the parameters using the cross-validation sets, and computed the goodness of prediction by recording and comparing the **test errors**, **AUC scores** on the test set.
 
 In the final part we compared the performances of each model, and discussed which one is the best and why.
 
